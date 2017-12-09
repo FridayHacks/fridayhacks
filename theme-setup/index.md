@@ -221,7 +221,11 @@ Having a problem getting something to work or want to know why I setup something
 
 ## License
 
+<<<<<<< HEAD
 This theme is free and open source software, distributed under the [MIT License]({{ site.url }}/LICENSE) version 2 or later. So feel free to to modify this theme to suit your needs.
+=======
+This theme is free and open source software, distributed under the [MIT License]({{ site.url }}/LICENSE). So feel free to to modify this theme to suit your needs.
+>>>>>>> 56facb927a1b303b96b196437802530b3683d587
 
 ---
 
