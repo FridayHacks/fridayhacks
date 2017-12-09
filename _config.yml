@@ -1,42 +1,80 @@
+<<<<<<< HEAD
 title:            Friday Hacks
-description:      
-disqus_shortname: 
+description:
+disqus_shortname:
 reading_time:     true
 words_per_minute: 200
 # Your site's domain goes here (eg: https://mmistakes.github.io, http://yourdomain.com, etc)
 # When testing locally leave blank or use http://localhost:4000
-url: http://www.fridayhacks.com 
+url: http://fridayhacks.com
 
 # Owner/author information
 owner:
-  name:           Santiago
-  avatar:         avatar.jpg
-  bio:            
+  name:           Friday Hacks
+  avatar:         logo.png
+  bio:
   email:          santiago@santiago.io
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        stronnics
+  twitter:        fridayhacks
+  facebook:       fridayhacks
+  github:
+  stackexchange:
+  linkedin:
+  instagram:
+  flickr:
+  tumblr:
+  # google plus id, include the '+', eg +mmistakes
+  google_plus:
+=======
+title:            HPSTR Theme
+description:      A responsive Jekyll theme with modern tendencies from designer Michael Rose.
+disqus_shortname: hpstrtheme
+reading_time:     true
+words_per_minute: 200
+url:              https://mmistakes.github.io/hpstr-jekyll-theme
+
+# Owner/author information
+owner:
+  name:           Michael Rose
+  avatar:         avatar.jpg
+  bio:            "Just another boring, tattooed, time traveling designer hailing from Buffalo New York."
+  email:          
+  # Social networking links used in footer. Update and remove as you like.
+  twitter:        mmistakes
   facebook:       
-  github:         
+  github:         mmistakes
   stackexchange:  
   linkedin:       
-  instagram:      
+  instagram:        
   flickr:         
   tumblr:         
   # google plus id, include the '+', eg +mmistakes
-  google_plus:
+  google_plus:    +MichaelRoseDesign
+>>>>>>> 56facb927a1b303b96b196437802530b3683d587
 
 # Background image to be tiled on all pages
-background: 
+background:
 
 # Analytics and webmaster tools stuff goes here
-google_analytics:   
+<<<<<<< HEAD
+google_analytics:
+google_verify:
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    America/New_York
+future:      false  # publish future dated posts --  true, false (default)
+=======
+google_analytics:   UA-2011187-5
 google_verify:      
 # https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
 bing_verify:         
 
 # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 timezone:    America/New_York
-future:      false  # publish future dated posts --  true, false (default) 
+future:      true
+>>>>>>> 56facb927a1b303b96b196437802530b3683d587
 highlighter: rouge
 markdown:    kramdown
 gems:
@@ -62,9 +100,15 @@ kramdown:
   toc_levels: 1..6
   enable_coderay: false
 
+<<<<<<< HEAD
+include:
+  - .htaccess
+exclude:
+=======
 include: 
   - .htaccess
 exclude: 
+>>>>>>> 56facb927a1b303b96b196437802530b3683d587
   - "*.less"
   - "*.sublime-project"
   - "*.sublime-workspace"
