@@ -13,18 +13,13 @@ was the perfect fit
 
 ### Before
 
-<figure>
-	<a href="images/fh1.png">
-	<img src="images/fh1.png" alt=""></a>
-	<figcaption><a href="images/fh1.png" title="FridayHacks website, using static Github Pages">FridayHacks website, using static Github Pages</a>.</figcaption>
-</figure>
+![Friday Hacks 1]({{ site.url }}/images/fh1.png)
+FridayHacks website, using static Github Pages
 
 ### After
 
-<figure>
-	<a href="images/fh2.png"><img src="images/fh2.png" alt=""></a>
-	<figcaption><a href="images/fh2.png" title="FridayHacks website, using HPSTR Jekyll theme">FridayHacks website, using HPSTR Jekyll theme</a>.</figcaption>
-</figure>
+![Friday Hacks 2]({{ site.url }}/images/fh2.png)
+FridayHacks website, using HPSTR Jekyll theme
 
 First, I had to fork the [HPSTR repository](https://github.com/mmistakes/hpstr-jekyll-theme),
 cloned it on my sandbox, and installed dependencies with
