@@ -5,11 +5,30 @@ description: "Friday Hacks App"
 tags: [sample post, images, test]
 ---
 
-T It lets you propose projects and form teams. Winners get ranked by points. Points could be exchange for free hours. Ex: Enough points can be exchanged for a day off.
+In today's hack, we decided to build an application that will help future editions
+of Friday Hacks. Basically, the application lets you propose projects to work on.
+Then, users will be able to upvote or downvote ideas and then allows to form teams
+to work on the best ideas.
 
+After the hacking event is finished, projects are ranked by points. As a reward
+system, points could be exchanged for free working hours. For instance, after reaching
+enough points, it could be exchanged for a day off.
 
-Here is the [prototype](https://github.com/fridayhacks/friday-hacks-app):
+Here is the basic [prototype](https://github.com/fridayhacks/friday-hacks-app):
 
-[![Prototype]({{ site.url }}/images/friday-hacks-app.png)]
+It is a simple Django application with a login system, coupled with a Postgres
+database. There are 3 models:
+* Team Model: Model for creating teams. A user joins a team.
+* Project model: Model for proposed projects. A project has a team associated with it
+* Rank Model: Model for reward system. Projects and teams are ranked and get points
 
-Next week will be about implementing a ranking system and a reddit-like upvote/downvote system for proposed projects.
+Basic UI:
+
+![Prototype]({{ site.url }}/images/friday-hacks-app.png)
+
+The application is still very basic and contains some minor errors. Next week,
+we hope to continue working on mechanical details such as
+* Project and Team proposals
+* Matching algorithm for projects and teams
+* reddit-like upvote/downvote system for proposed projects.
+* Ranking system and point allocation for projects and teams
