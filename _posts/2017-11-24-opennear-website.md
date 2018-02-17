@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[FH #6] OpenNEAR website"
+title: "[FH #6] OpenNEAR Website"
 description: "Public website"
 tags: [sample post, images, test]
 ---
@@ -18,7 +18,7 @@ pages. Nothing too complicated. It is very simple static website:
 ![Website]({{ site.url }}/images/opennear_website.png)
 
 Now the have some small branding going on, it is time to get to work and get
-things done. 
+things done.
 
 Credits:
 Check out the new logo that I created on <a href="http://logomakr.com" title="Logo Makr">LogoMakr.com</a> https://logomakr.com/4s50NM
