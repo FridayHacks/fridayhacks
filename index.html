@@ -5,7 +5,7 @@ description: "Small Hacking Projects."
 tags: [Jekyll, theme, themes, responsive, blog, modern]
 comments: false
 image:
-  feature: fridayhacks.jpg
+  feature: fridayhacks_banner.png
 ---
 
 {% for post in paginator.posts %}
@@ -13,7 +13,7 @@ image:
   <header>
     {% if post.image.feature %}
       <div class="entry-image-index">
-        <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}"><img src="{{ site.url }}/images/{{ post.image.feature }}" alt="{{ post.title }}"></a>
+        <a href="{{ site.url }}{{ post.url }}" title="{{ post.title }}"><img src="{{ site.url }}/assets/img/{{ post.image.feature }}" alt="{{ post.title }}"></a>
       </div><!-- /.entry-image -->
     {% endif %}
     <div class="entry-meta">
