@@ -138,10 +138,8 @@ body {
 
 .entry-image {
 	position: relative;
-	top: -50%; 
-	left: -50%; 
-	width: 200%; 
-	height: 200%;
+	width: 100%;
+	height: $feature-image-height;
 	min-height: $feature-image-height;
 	overflow: hidden;
 
@@ -156,14 +154,15 @@ body {
 	}
 
 	img {
-		position: absolute; 
-		top: 0; 
-		left: 0; 
-		right: 0; 
-		bottom: 0; 
-		margin: auto; 
-		min-width: 50%;
-		min-height: $feature-image-height; // match .entry-image min-height
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: $feature-image-height;
+		min-width: auto;
+		min-height: auto;
+		object-fit: cover;
+		object-position: center;
 	}
 }
 

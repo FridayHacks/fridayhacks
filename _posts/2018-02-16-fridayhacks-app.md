@@ -24,7 +24,7 @@ database. There are 3 models:
 
 Basic UI:
 
-![Prototype]({{ site.url }}/images/friday-hacks-app.png)
+![Prototype]({{ site.url }}/assets/img/friday-hacks-app.png)
 
 The application is still very basic and contains some minor errors. Next week,
 we hope to continue working on mechanical details such as

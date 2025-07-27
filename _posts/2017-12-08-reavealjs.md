@@ -19,7 +19,7 @@ css and js files.
 
 Here is the [template](https://github.com/paiva/revealjs-presentation-template):
 
-[![Reveal.js Template]({{ site.url }}/images/revealjs.png)](http://santiago.io/revealjs-presentation-template/#/title)
+[![Reveal.js Template]({{ site.url }}/assets/img/revealjs.png)](http://santiago.io/revealjs-presentation-template/#/title)
 
 Basically, every slide is a considered a section: `<section> I am a slide </section>`,
 and then you can treat every single slide as a HTML page.
