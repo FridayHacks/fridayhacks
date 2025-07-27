@@ -10,16 +10,16 @@ url: https://www.fridayhacks.com
 # Owner/author information
 owner:
   name:           FridayHacks
-  avatar:         logo.png
+  avatar:         fridayhacks.png
   bio:
-  email:          
+  email:          contact@fridayhacks.com
   # Social networking links used in footer. Update and remove as you like.
   twitter:        fridayhacks
-  facebook:       fridayhacks
-  github:         fridayhacks
+  #facebook:       fridayhacks
+  #github:         fridayhacks
   stackexchange:
   linkedin:
-  instagram:      fridayhacks
+  #instagram:      fridayhacks
   flickr:
   tumblr:
   # google plus id, include the '+', eg +mmistakes
