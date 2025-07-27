@@ -1,4 +1,4 @@
-title: Friday Hacks
+title: FridayHacks
 description:
 disqus_shortname:
 reading_time:     true
@@ -9,17 +9,17 @@ url: https://www.fridayhacks.com
 
 # Owner/author information
 owner:
-  name:           Friday Hacks
-  avatar:         logo.png
+  name:           FridayHacks
+  avatar:         fridayhacks.png
   bio:
-  email:          
+  email:          contact@fridayhacks.com
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        fridayhacks
-  facebook:       fridayhacks
-  github:         fridayhacks
+  x:        fridayhacks
+  #facebook:       fridayhacks
+  #github:         fridayhacks
   stackexchange:
   linkedin:
-  instagram:      fridayhacks
+  #instagram:      fridayhacks
   flickr:
   tumblr:
   # google plus id, include the '+', eg +mmistakes

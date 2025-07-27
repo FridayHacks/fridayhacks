@@ -6,7 +6,7 @@
 			<a href="#">About</a>
 			<ul class="dl-submenu">
 				<li>
-					<img src="{{ site.url }}/images/{{ site.owner.avatar }}" alt="{{ site.owner.name }} photo" class="author-photo">
+					<img src="{{ site.url }}/assets/img/{{ site.owner.avatar }}" alt="{{ site.owner.name }} photo" class="author-photo">
 					<h4>{{ site.owner.name }}</h4>
 					<p>{{ site.owner.bio }}</p>
 				</li>
@@ -14,8 +14,8 @@
 				{% if site.owner.email %}<li>
 					<a href="mailto:{{ site.owner.email }}"><i class="fa fa-fw fa-envelope"></i> Email</a>
 				</li>{% endif %}
-				{% if site.owner.twitter %}<li>
-					<a href="https://twitter.com/{{ site.owner.twitter }}"><i class="fa fa-fw fa-twitter"></i> Twitter</a>
+				{% if site.owner.x %}<li>
+					<a href="https://x.com/{{ site.owner.x }}"><i class="fa-solid fa-fw" style="font-weight: bold; font-style: normal;">𝕏</i> @fridayhacks</a>
 				</li>{% endif %}
 				{% if site.owner.facebook %}<li>
 					<a href="https://facebook.com/{{ site.owner.facebook }}"><i class="fa fa-fw fa-facebook"></i> Facebook</a>

@@ -11,17 +11,17 @@ Polydigital is an upcoming startup that focuses in Web3 and dWeb technologies, s
 
 The template was very easy to use and the original version looks like this:
 
-![WeBuild Template]({{ site.url }}/images/webuild.png)
+![WeBuild Template]({{ site.url }}/assets/img/webuild.png)
 
 We removed some unnecessary information such as the countdown and the contact-us form, to keep it more simplistic and give it a "Stealth Mode" vibe
 
 We added Polydigital's logo and we looked for a royalty-free red background image that can transmit the concept of "poly" or "multiple", and the first idea that came to mind was to implement a 3D version background containing some polygons. We found this amazing design on Pixabay and we went with it
 
-![Red Triangles]({{ site.url }}/images/red_triangles.png)
+![Red Triangles]({{ site.url }}/assets/img/red_triangles.png)
 
 The final (prototype) design came together as follows: 
 
-![Polydigital Prototype]({{ site.url }}/images/polydigital_prototype.png)
+![Polydigital Prototype]({{ site.url }}/assets/img/polydigital_prototype.png)
 
 Now, it is important to point out that the background image does not look very well for large-sized screens. For instance, it does not look great on a 34" screen (as the image is more for square-type of windows), but it does look great on mobile phones. Another important part to mention is that the logo resizing needs work. It looks ok on a big screen, but too small on a mobile phone. Not a big deal, but it is something to fix in the future. 
 

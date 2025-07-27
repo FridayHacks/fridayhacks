@@ -22,34 +22,34 @@ in your Mac. Then, go to [Mailsteward](http://www.mailsteward.com/download.html)
 
 After installing Mailsteward, you can take a look at the MySQL tables
 
-![MS_1]({{ site.url }}/images/ms_1.png)
+![MS_1]({{ site.url }}/assets/img/ms_1.png)
 
 Next, we will connect Mailsteward with Apple Mail, so Mailsteward will be pulling
 emails from Apple Mail connected accounts
 
-![MS_2]({{ site.url }}/images/ms_2.png)
+![MS_2]({{ site.url }}/assets/img/ms_2.png)
 
 Start archiving process:
 
-![MS_3]({{ site.url }}/images/ms_3.png)
+![MS_3]({{ site.url }}/assets/img/ms_3.png)
 
-![MS_4]({{ site.url }}/images/ms_4.png)
+![MS_4]({{ site.url }}/assets/img/ms_4.png)
 
 Once we are done, it will tell you how many emails got archived from all your accounts.
 You can allow for duplicate emails or disable duplicates.
 
-![MS_5]({{ site.url }}/images/ms_5.png)
+![MS_5]({{ site.url }}/assets/img/ms_5.png)
 
 Now you have an email database, everything indexed and organized:
 
-![MS_6]({{ site.url }}/images/ms_6.png)
+![MS_6]({{ site.url }}/assets/img/ms_6.png)
 
 You can then  perform complex search queries in your entire email database:
 
-![MS_7]({{ site.url }}/images/ms_7.png)
+![MS_7]({{ site.url }}/assets/img/ms_7.png)
 
 Finally, you can schedule automatic email archiving as follows:
 
-![MS_8]({{ site.url }}/images/ms_8.png)
+![MS_8]({{ site.url }}/assets/img/ms_8.png)
 
 And voila! Your own email database ready for big data queries.  

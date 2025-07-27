@@ -13,12 +13,12 @@ was the perfect fit
 
 ### Before
 
-![Friday Hacks 1]({{ site.url }}/images/fh1.png)
+![Friday Hacks 1]({{ site.url }}/assets/img/fh1.png)
 FridayHacks website, using static Github Pages
 
 ### After
 
-![Friday Hacks 2]({{ site.url }}/images/fh2.png)
+![Friday Hacks 2]({{ site.url }}/assets/img/fh2.png)
 FridayHacks website, using HPSTR Jekyll theme
 
 First, I had to fork the [HPSTR repository](https://github.com/mmistakes/hpstr-jekyll-theme),

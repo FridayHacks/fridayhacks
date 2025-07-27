@@ -138,10 +138,8 @@ body {
 
 .entry-image {
 	position: relative;
-	top: -50%; 
-	left: -50%; 
-	width: 200%; 
-	height: 200%;
+	width: 100%;
+	height: $feature-image-height;
 	min-height: $feature-image-height;
 	overflow: hidden;
 
@@ -156,14 +154,15 @@ body {
 	}
 
 	img {
-		position: absolute; 
-		top: 0; 
-		left: 0; 
-		right: 0; 
-		bottom: 0; 
-		margin: auto; 
-		min-width: 50%;
-		min-height: $feature-image-height; // match .entry-image min-height
+		position: relative;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: $feature-image-height;
+		min-width: auto;
+		min-height: auto;
+		object-fit: cover;
+		object-position: center;
 	}
 }
 
@@ -174,11 +173,34 @@ body {
 		height: $front-page-feature-image-height;
 	}
 
+	// Completely override entry-image for front page
 	.entry-image {
 		min-height: $front-page-feature-image-height;
+		// Reset all positioning
+		position: relative !important;
+		top: 0 !important;
+		left: 0 !important;
+		width: 100% !important;
+		height: $front-page-feature-image-height !important;
+		overflow: hidden !important;
+		display: block !important;
 
 		img {
-			min-height: $front-page-feature-image-height;
+			// Completely reset image positioning and sizing
+			position: relative !important;
+			top: 0 !important;
+			left: 0 !important;
+			right: auto !important;
+			bottom: auto !important;
+			margin: 0 !important;
+			width: 100% !important;
+			height: $front-page-feature-image-height !important;
+			min-width: auto !important;
+			min-height: auto !important;
+			max-width: none !important;
+			max-height: none !important;
+			object-fit: cover !important;
+			object-position: center !important;
 		}
 	}
 }
