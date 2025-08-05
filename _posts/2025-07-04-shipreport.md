@@ -1,11 +1,9 @@
 ---
 layout: post
-title: "ShipReport"
+title: "ShipReport: A Logging and Self-Journaling Tool"
 description: "A logging and self-journaling tool."
 tags: [shipreport, logging, tool]
 ---
-
-# ShipReport: A Logging and Self-Journaling Tool
 
 ### The Power of Daily Progress Logging
 
