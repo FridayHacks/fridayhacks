@@ -5,6 +5,7 @@ description: "Building Modular Applications."
 tags: [semablocks, modularity, optimization]
 ---
 
+![Semablocks](/assets/img/semablocks/blue-2137334_640.jpg)
 
 # Semablocks
 
