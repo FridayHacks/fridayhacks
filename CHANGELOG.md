@@ -2,6 +2,11 @@
 
 All notable changes to FridayHacks are documented in this file.
 
+## 2026-01-23
+
+### Added
+- **Argparse vs Click: Why Every Prototype Deserves a CLI** - Comparison of Python CLI frameworks with practical examples. Covers the benefits of CLI-first development, side-by-side comparison of argparse and Click, and building production-grade tools with Rich, loguru, and Pydantic.
+
 ## 2025-11-29
 
 ### Added
