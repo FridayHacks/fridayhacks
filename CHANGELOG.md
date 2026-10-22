@@ -2,10 +2,26 @@
 
 All notable changes to FridayHacks are documented in this file.
 
+<<<<<<< HEAD
+## 2025-12-30
+
+### Added
+- **VERSION file** - Added semantic versioning starting at v1.0.0.
+- **docs/ folder** - Created project documentation structure with ROADMAP.md and TODO.md for tracking improvements and future plans.
+- **twitter:site meta tag** - Improved social sharing cards on Twitter/X.
+
+### Changed
+- **About page** - Rewrote content to reflect the "technical playground" vision, updated categories to match current focus areas (AI/ML, Developer Tools, Web Development, Infrastructure), and updated modified date.
+
+### Removed
+- **Font Awesome SCSS** - Removed 14 unused SCSS files from `_sass/vendor/font-awesome/` (now using CDN).
+- **Font Awesome fonts** - Removed 6 unused font files from `assets/fonts/` (now using CDN).
+=======
 ## 2026-01-23
 
 ### Added
 - **Argparse vs Click: Why Every Prototype Deserves a CLI** - Comparison of Python CLI frameworks with practical examples. Covers the benefits of CLI-first development, side-by-side comparison of argparse and Click, and building production-grade tools with Rich, loguru, and Pydantic.
+>>>>>>> master
 
 ## 2025-11-29
 

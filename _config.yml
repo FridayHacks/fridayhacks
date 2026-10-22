@@ -66,6 +66,8 @@ kramdown:
 include:
   - .htaccess
 exclude:
+  - docs
+  - VERSION
   - "*.less"
   - "*.sublime-project"
   - "*.sublime-workspace"
