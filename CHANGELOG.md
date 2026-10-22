@@ -2,6 +2,7 @@
 
 All notable changes to FridayHacks are documented in this file.
 
+<<<<<<< HEAD
 ## 2025-12-30
 
 ### Added
@@ -15,6 +16,12 @@ All notable changes to FridayHacks are documented in this file.
 ### Removed
 - **Font Awesome SCSS** - Removed 14 unused SCSS files from `_sass/vendor/font-awesome/` (now using CDN).
 - **Font Awesome fonts** - Removed 6 unused font files from `assets/fonts/` (now using CDN).
+=======
+## 2026-01-23
+
+### Added
+- **Argparse vs Click: Why Every Prototype Deserves a CLI** - Comparison of Python CLI frameworks with practical examples. Covers the benefits of CLI-first development, side-by-side comparison of argparse and Click, and building production-grade tools with Rich, loguru, and Pydantic.
+>>>>>>> master
 
 ## 2025-11-29
 
