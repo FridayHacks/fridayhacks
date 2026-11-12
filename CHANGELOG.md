@@ -2,6 +2,41 @@
 
 All notable changes to FridayHacks are documented in this file.
 
+## 1.1.8 - 2026-11-12
+
+### Changed
+- **Homepage title link** - Made the FridayHacks hero title link to the homepage, including from paginated pages.
+
+## 1.1.7 - 2026-11-12
+
+### Fixed
+- **Homepage navigation dropdown** - Gave the dropdown and animated submenu panels their own responsive dimensions below the burger button, preventing clipping to the button's width and height.
+
+## 1.1.6 - 2026-11-12
+
+### Fixed
+- **Hero header placement** - Left-aligned the burger icon and FridayHacks title as one row and centered that row vertically within the hero image.
+
+## 1.1.5 - 2026-11-12
+
+### Changed
+- **Homepage header alignment** - Centered the burger menu and title together as a single horizontal group.
+
+## 1.1.4 - 2026-11-12
+
+### Fixed
+- **Homepage header row** - Placed the title beside the burger menu in the same row on desktop and mobile, with responsive sizing and a 16px gap.
+
+## 1.1.3 - 2026-11-12
+
+### Fixed
+- **Homepage title spacing** - Replaced inherited heading margins with explicit responsive insets, aligned the desktop title with the menu, reserved space below the menu, and scaled the title for narrow screens.
+
+## 1.1.2 - 2026-11-12
+
+### Changed
+- **Homepage title** - Aligned the banner title to the left on desktop and mobile, including paginated homepages. Documented the alignment setting.
+
 ## 1.1.1 - 2026-11-12
 
 ### Changed

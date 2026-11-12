@@ -217,6 +217,21 @@ Recommended image sizes:
 
 ## Configuration
 
+### Homepage Title Alignment
+
+The homepage sets `header_align: left` in `index.html`. The post-index layout
+applies the `header-title-left` class, styled in `_sass/_page.scss`, to align
+the banner title beside the burger menu on desktop and mobile. The menu and
+title form a left-aligned group centered vertically within the hero image,
+with a 16px gap after the 48px button. The group has a 20px left inset on mobile
+and a 25px left inset on desktop. The homepage navigation is rendered inside
+the header row, with the icon and text vertically aligned beside each other.
+The dropdown and animated submenu panels are positioned absolutely below the
+button with their own responsive width and viewport-based height limit; they
+must not inherit the button wrapper's 48px width or 45px height.
+Its font size scales from 24px to 40px to fit beside the menu on narrow screens.
+The FridayHacks hero title links to the homepage, including from paginated pages.
+
 ### Search Metadata and Discovery
 
 `_includes/head.html` generates canonical URLs, escaped descriptions, social previews,
