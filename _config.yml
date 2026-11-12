@@ -1,5 +1,6 @@
 title: FridayHacks
-description:
+description: "Practical software engineering experiments, AI projects, developer tools, and infrastructure tutorials. Learn by building with FridayHacks."
+social_image: fridayhacks_banner.png
 disqus_shortname:
 reading_time:     true
 words_per_minute: 200
@@ -66,6 +67,9 @@ kramdown:
 include:
   - .htaccess
 exclude:
+  - justfile
+  - docs
+  - VERSION
   - "*.less"
   - "*.sublime-project"
   - "*.sublime-workspace"

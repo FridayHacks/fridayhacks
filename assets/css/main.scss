@@ -15,7 +15,7 @@ sitemap: false
 @import "variables";
 @import "mixins";
 @import "reset";
-@import "vendor/font-awesome/font-awesome";
+// Font Awesome loaded via CDN in head.html
 @import "vendor/magnific-popup/magnific-popup";
 @import "site";
 @import "typography";

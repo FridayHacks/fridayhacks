@@ -1,5 +1,16 @@
 # CLAUDE.md - FridayHacks Project Guide
 
+## Company Knowledge Base
+
+At the start of every session, before working on this project, read:
+
+1. `~/Dev/swt/semakb/00-Index/Home.md` - company and project overview
+2. `~/Dev/swt/semakb/00-Index/Media.md` - Media category context
+3. `~/Dev/swt/semakb/02-Divisions/Media/fridayhacks/Overview.md` - FridayHacks context
+4. `~/Dev/swt/semakb/02-Divisions/Media/fridayhacks/Architecture.md` - project architecture
+
+Before making technical decisions, check `~/Dev/swt/semakb/03-Decisions/` for applicable ADRs. Record durable discoveries and decisions in the relevant Semakb notes when completing work.
+
 ## Project Overview
 
 FridayHacks is a technical blog documenting software engineering projects, experiments, and tutorials. The site is built with Jekyll and hosted on GitHub Pages at https://www.fridayhacks.com.
@@ -109,8 +120,7 @@ comments: false                 # Disable comments
 
 ### Style Rules
 
-- **No emojis** in posts or content
-- **No em dashes** (use regular dashes or rewrite sentences)
+- **Never use emojis or em dashes in blog posts**, including titles, descriptions, headings, and body text. Use regular hyphens or rewrite sentences instead of using em dashes.
 - **No smart quotes** (use straight quotes)
 - Keep descriptions concise (under 160 characters for SEO)
 - Use active voice
@@ -157,6 +167,16 @@ Wrap-up and key takeaways.
 
 ## Development Commands
 
+### Using Just
+
+Requires Ruby, Bundler, and `just`.
+
+```bash
+just install    # Install Ruby dependencies
+just run        # Serve at http://localhost:4000 with live reload
+just help       # Show available commands (also the default for just)
+```
+
 ### Using Make (Recommended)
 
 ```bash
@@ -196,6 +216,18 @@ Recommended image sizes:
 - Thumbnails: 400x400px
 
 ## Configuration
+
+### Search Metadata and Discovery
+
+`_includes/head.html` generates canonical URLs, escaped descriptions, social previews,
+and JSON-LD via `structured-data.html`. Posts use `BlogPosting`; other pages use
+`WebPage`. Set a concise `description` in frontmatter and use `modified` only for
+actual content updates. Missing preview images fall back to `social_image`.
+
+Jekyll generates `/sitemap.xml` and `/feed.xml`. `/robots.txt` permits crawling and
+advertises the sitemap; `/llms.txt` generates a guide and index of published posts.
+The latter is supplemental guidance, not a guarantee of AI search inclusion.
+Set `sitemap: false` to exclude an HTML page from the sitemap and mark it noindex.
 
 ### _config.yml Key Settings
 
@@ -248,9 +280,11 @@ For fixes:
 fix [description of fix]
 ```
 
-### Updating the Changelog
+### Required Documentation, Changelog, and Version Updates
 
-After adding a new post, update `CHANGELOG.md`:
+For every change, including blog posts, code, configuration, and contributor rules, always update the relevant documentation, `CHANGELOG.md`, and `VERSION` before considering the work complete. Use semantic versioning (major for breaking changes, minor for new functionality, patch for fixes and documentation changes), and keep the changelog's release version consistent with `VERSION`.
+
+For example, record a new post in `CHANGELOG.md`:
 
 ```markdown
 ## YYYY-MM-DD

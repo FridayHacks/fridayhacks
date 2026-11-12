@@ -2,10 +2,46 @@
 
 All notable changes to FridayHacks are documented in this file.
 
+## 1.1.1 - 2026-11-12
+
+### Changed
+- **Contribution requirements** - Require relevant documentation, `CHANGELOG.md`, and `VERSION` updates for every change in both contributor guides, with semantic versioning and consistent release numbers.
+
+## 1.1.0 - 2026-11-12
+
+### Added
+- **Just commands** - Added `just install`, `just run`, and `just help` for dependency installation and local development with live reload.
+- **Search discovery** - Added BlogPosting and WebPage structured data, crawler guidance in `robots.txt`, and a generated `llms.txt` index of published articles.
+
+### Changed
+- **SEO and social previews** - Improved default and homepage descriptions, canonical URLs, Twitter/X cards, Open Graph metadata, and archive headings. Added a banner fallback for missing preview images.
+- **Umami analytics** - Switched to the Semanttica-hosted script and updated the website ID.
+- **Contributor guidance** - Documented Just commands and search metadata conventions. Explicitly prohibited emojis and em dashes in blog posts in both `CLAUDE.md` and `AGENTS.md`.
+- **Version** - Bumped from 1.0.0 to 1.1.0.
+
+### Fixed
+- **404 indexing** - Excluded the error page from the sitemap and marked it noindex.
+- **Site output** - Excluded the justfile from generated pages.
+- **Changelog history** - Removed existing merge-conflict markers while preserving both historical entries.
+
 ## 2026-01-23
 
 ### Added
 - **Argparse vs Click: Why Every Prototype Deserves a CLI** - Comparison of Python CLI frameworks with practical examples. Covers the benefits of CLI-first development, side-by-side comparison of argparse and Click, and building production-grade tools with Rich, loguru, and Pydantic.
+
+## 2025-12-30
+
+### Added
+- **VERSION file** - Added semantic versioning starting at v1.0.0.
+- **docs/ folder** - Created project documentation structure with ROADMAP.md and TODO.md for tracking improvements and future plans.
+- **twitter:site meta tag** - Improved social sharing cards on Twitter/X.
+
+### Changed
+- **About page** - Rewrote content to reflect the "technical playground" vision, updated categories to match current focus areas (AI/ML, Developer Tools, Web Development, Infrastructure), and updated modified date.
+
+### Removed
+- **Font Awesome SCSS** - Removed 14 unused SCSS files from `_sass/vendor/font-awesome/` (now using CDN).
+- **Font Awesome fonts** - Removed 6 unused font files from `assets/fonts/` (now using CDN).
 
 ## 2025-11-29
 
