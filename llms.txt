@@ -1,0 +1,22 @@
+---
+layout: null
+sitemap: false
+---
+# {{ site.title }}
+
+> {{ site.description }}
+
+FridayHacks shares hands-on software engineering experiments and project write-ups. Topics include AI and machine learning, developer tools, web development, infrastructure, and security. Articles span different years; check each article's publication date when assessing technical guidance.
+
+## Site navigation
+
+- [About]({{ '/about/' | absolute_url }}): Purpose, topics, and background.
+- [All posts]({{ '/posts/' | absolute_url }}): Complete article archive by year.
+- [Topics]({{ '/tags/' | absolute_url }}): Articles grouped by tag.
+- [Atom feed]({{ '/feed.xml' | absolute_url }}): Recent published articles.
+- [Sitemap]({{ '/sitemap.xml' | absolute_url }}): Canonical site URLs.
+
+## Published articles
+{% for post in site.posts %}
+- [{{ post.title | strip_html | normalize_whitespace }}]({{ post.url | absolute_url }}) ({{ post.date | date: '%Y-%m-%d' }}): {{ post.description | default: post.excerpt | strip_html | normalize_whitespace | truncate: 200 }}
+{% endfor %}

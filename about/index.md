@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About Friday Hacks
+description: "FridayHacks is a technical playground for learning by building, with hands-on AI experiments, developer tools, web projects, and infrastructure tutorials."
 image:
   feature: abstract-5.jpg
   credit: dargadgetz
