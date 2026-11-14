@@ -2,6 +2,11 @@
 
 All notable changes to FridayHacks are documented in this file.
 
+## 1.2.1 - 2026-11-14
+
+### Changed
+- **Cloudflare build troubleshooting** - Documented how to skip automatic Bun installation of legacy Grunt image tools after the observed optipng-bin failure, including the required build-variable scope and retry checks.
+
 ## 1.2.0 - 2026-11-14
 
 ### Added

@@ -24,6 +24,24 @@ Do not select a Pages project or accept an inferred Grunt build or `dist` output
 Merge and push to `master` before building; retrying an old build uses its old
 commit. Check the deployment SHA.
 
+## Dependency installation failure
+
+If the log shows `Installing project dependencies: bun install` followed by an
+`optipng-bin` postinstall error, Cloudflare is installing the legacy Grunt image
+tools before the build command runs. Jekyll does not require those tools.
+
+In the Worker's **Settings > Build > Build variables and secrets**, add
+`SKIP_DEPENDENCY_INSTALL` with value `true`. This must be a build variable;
+setting it in Worker runtime variables, `wrangler.jsonc`, or the build command
+does not affect the earlier dependency installation phase. Keep the explicit
+`bundle install && bundle exec jekyll build` command above, then start a new build.
+The next log should skip automatic Bun installation and reach the Jekyll build.
+If Bun still runs, check that the variable was saved on the Worker being built.
+
+The 2026-11-14 failed build installed Ruby 3.2.3 successfully but failed in
+`optipng-bin` under Node 24.18.0 before reaching Jekyll. Cloudflare deployment
+remains unverified until a subsequent build succeeds.
+
 ## Preview verification
 
 `src/worker.js` forwards requests to `ASSETS`. Worker-first routing enables
