@@ -67,6 +67,14 @@ kramdown:
 include:
   - .htaccess
 exclude:
+  - AGENTS.md
+  - CLAUDE.md
+  - CHANGELOG.md
+  - CNAME
+  - Makefile
+  - wrangler.jsonc
+  - src
+  - package-lock.json
   - justfile
   - docs
   - VERSION

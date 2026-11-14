@@ -13,7 +13,7 @@ Before making technical decisions, check `~/Dev/swt/semakb/03-Decisions/` for ap
 
 ## Project Overview
 
-FridayHacks is a technical blog documenting software engineering projects, experiments, and tutorials. The site is built with Jekyll and hosted on GitHub Pages at https://www.fridayhacks.com.
+FridayHacks is a technical blog documenting software engineering projects, experiments, and tutorials. The site is built with Jekyll and configured for Cloudflare Workers Static Assets at https://www.fridayhacks.com.
 
 The blog started in 2015 and covers topics including:
 - AI and machine learning projects
@@ -30,7 +30,7 @@ The blog started in 2015 and covers topics including:
 - **Syntax Highlighting**: Rouge
 - **CSS Preprocessor**: SCSS/Sass
 - **Analytics**: Umami (privacy-friendly)
-- **Hosting**: GitHub Pages
+- **Hosting**: Cloudflare Workers Static Assets (production cutover pending)
 - **Domain**: fridayhacks.com
 
 ## Project Structure
@@ -270,6 +270,13 @@ Edit `_data/navigation.yml`:
 - title: External Link
   url: https://example.com
 ```
+
+## Deployment
+
+Cloudflare Workers Builds publishes Jekyll output using `wrangler.jsonc` and
+`src/worker.js`, matching Automators and Decentralizers. See
+[deployment instructions](docs/deployment.md) for build settings, verification,
+domain cutover, and rollback. GitHub Actions validates builds only.
 
 ## Git Workflow
 

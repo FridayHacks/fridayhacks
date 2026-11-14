@@ -37,7 +37,8 @@ Active tasks and improvements for the site.
 ## Infrastructure
 
 - [ ] Set up staging environment for testing
-- [ ] Add CI/CD pipeline for builds
+- [x] Add GitHub Actions build validation
+- [ ] Deploy the Cloudflare Worker and verify preview, custom domain, and request logs (see [deployment guide](deployment.md))
 - [ ] Configure automated link checking
 - [ ] Add spell checking to build process
 - [ ] Consider CDN for assets

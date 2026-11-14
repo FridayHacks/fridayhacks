@@ -1,3 +1,10 @@
+# FridayHacks
+
+Technical blog built with Jekyll. Cloudflare Workers Static Assets deployment
+configuration matches Automators and Decentralizers. Production cutover is pending.
+
+See [deployment instructions](docs/deployment.md) and [project guide](CLAUDE.md).
+
 # HPSTR Jekyll Theme
 
 * Modern and minimal design.

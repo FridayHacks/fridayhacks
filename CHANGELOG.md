@@ -2,6 +2,15 @@
 
 All notable changes to FridayHacks are documented in this file.
 
+## 1.2.0 - 2026-11-14
+
+### Added
+- **Cloudflare deployment** - Added Workers Static Assets configuration, custom 404 routing, request observability, and a pass-through Worker matching Automators and Decentralizers. Live deployment and DNS cutover remain pending.
+- **Build validation** - Added GitHub Actions Jekyll validation and pinned Ruby to 3.2.3.
+
+### Changed
+- **Deployment documentation** - Documented Cloudflare build settings, preview checks, domain cutover, and rollback. Excluded deployment tooling, contributor guides, and legacy CNAME from generated output.
+
 ## 1.1.8 - 2026-11-12
 
 ### Changed
