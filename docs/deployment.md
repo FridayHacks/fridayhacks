@@ -18,13 +18,20 @@ Connect the GitHub repository to a Worker named `fridayhacks`:
 | Build variable | `SKIP_DEPENDENCY_INSTALL=true` |
 
 Ruby is pinned to 3.2.3 in `.ruby-version`. Explicit gem installation avoids
-installing the legacy Grunt dependencies in `package.json`; theme assets are
+installing Node tooling; theme assets are
 already committed. Publish `_site/` using the committed Wrangler configuration.
 Do not select a Pages project or accept an inferred Grunt build or `dist` output.
 Merge and push to `master` before building; retrying an old build uses its old
 commit. Check the deployment SHA.
 
 ## Dependency installation failure
+
+The legacy Grunt manifest and configuration now live in `tools/legacy-assets/`,
+excluded from Jekyll output. The repository root has no Node dependency manifest.
+This removes the trigger for automatic installation of the obsolete image tools.
+Keep the Cloudflare root directory set to `/`. Push this change and start a build
+from that new commit; retrying a previous commit still uses the old root manifest.
+
 
 If the log shows `Installing project dependencies: bun install` followed by an
 `optipng-bin` postinstall error, Cloudflare is installing the legacy Grunt image
@@ -38,8 +45,8 @@ does not affect the earlier dependency installation phase. Keep the explicit
 The next log should skip automatic Bun installation and reach the Jekyll build.
 If Bun still runs, check that the variable was saved on the Worker being built.
 
-The 2026-11-14 failed build installed Ruby 3.2.3 successfully but failed in
-`optipng-bin` under Node 24.18.0 before reaching Jekyll. Cloudflare deployment
+Both 2026-11-14 failed builds installed Ruby 3.2.3 successfully but failed in
+`optipng-bin` or `gifsicle` under Node 24.18.0 before reaching Jekyll. Cloudflare deployment
 remains unverified until a subsequent build succeeds.
 
 ## Preview verification

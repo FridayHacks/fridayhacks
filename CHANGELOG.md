@@ -2,6 +2,11 @@
 
 All notable changes to FridayHacks are documented in this file.
 
+## 1.2.2 - 2026-11-14
+
+### Fixed
+- **Cloudflare dependency detection** - Moved the unused legacy Grunt manifest and configuration into `tools/legacy-assets/` so root dependency detection no longer installs incompatible image binaries. Excluded archived tooling from Jekyll output.
+
 ## 1.2.1 - 2026-11-14
 
 ### Changed

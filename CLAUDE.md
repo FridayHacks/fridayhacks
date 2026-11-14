@@ -276,7 +276,9 @@ Edit `_data/navigation.yml`:
 Cloudflare Workers Builds publishes Jekyll output using `wrangler.jsonc` and
 `src/worker.js`, matching Automators and Decentralizers. See
 [deployment instructions](docs/deployment.md) for build settings, verification,
-domain cutover, and rollback. GitHub Actions validates builds only.
+domain cutover, and rollback. GitHub Actions validates builds only. Legacy Grunt files are archived under
+`tools/legacy-assets/` to keep Cloudflare from installing obsolete Node image
+tools. Jekyll uses the committed assets and requires no Node dependencies.
 
 ## Git Workflow
 

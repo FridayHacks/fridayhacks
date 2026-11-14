@@ -67,6 +67,7 @@ kramdown:
 include:
   - .htaccess
 exclude:
+  - tools
   - AGENTS.md
   - CLAUDE.md
   - CHANGELOG.md
