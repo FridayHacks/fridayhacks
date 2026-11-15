@@ -117,6 +117,7 @@ comments: false                 # Disable comments
 3. **Image syntax**: `![Alt text](/assets/img/image.png)` or `![Alt text]({{ site.url }}/assets/img/image.png)`
 4. **Code blocks**: Use triple backticks with language identifier
 5. **Links**: Use standard markdown `[text](url)`
+6. **Python commands**: Use `python3` when invoking the interpreter in examples, including `uv run python3` and `poetry run python3`. Preserve actual subcommand names such as `poetry python install`.
 
 ### Style Rules
 

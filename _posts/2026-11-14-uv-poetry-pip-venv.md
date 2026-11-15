@@ -26,8 +26,8 @@ mkdir http-demo
 cd http-demo
 python3 -m venv .venv
 source .venv/bin/activate
-python -m pip install httpx
-python -m pip freeze > requirements.txt
+python3 -m pip install httpx
+python3 -m pip freeze > requirements.txt
 ```
 
 On Windows PowerShell, activate with `.venv\Scripts\Activate.ps1` instead.
@@ -42,10 +42,10 @@ response.raise_for_status()
 print(response.status_code)
 ```
 
-Run it with `python main.py`. Another developer can create an environment and install the recorded dependencies:
+Run it with `python3 main.py`. Another developer can create an environment and install the recorded dependencies:
 
 ```bash
-python -m pip install -r requirements.txt
+python3 -m pip install -r requirements.txt
 ```
 
 This is a workable approach. The limitation is that `pip freeze` captures installed packages, including transitive dependencies and anything else you installed. It does not distinguish the packages your application directly needs from the packages those dependencies need.
@@ -65,7 +65,7 @@ uv add httpx
 Replace the generated `main.py` with the HTTP example above, then run:
 
 ```bash
-uv run python main.py
+uv run python3 main.py
 ```
 
 The important project files serve different purposes:
@@ -83,7 +83,7 @@ When someone checks out the project, they can run:
 
 ```bash
 uv sync --locked
-uv run --locked python main.py
+uv run --locked python3 main.py
 ```
 
 `--locked` makes an outdated lockfile an error instead of allowing uv to update it. Without that flag, `uv run` normally checks and updates the lockfile and environment before executing the command. For CI, explicitly checking the committed lockfile helps catch metadata changes that were not locked.
@@ -124,7 +124,7 @@ package-mode = false
 Create `main.py` with the HTTP example, then run:
 
 ```bash
-poetry run python main.py
+poetry run python3 main.py
 ```
 
 Poetry supports this application-oriented setup through [non-package mode](https://python-poetry.org/docs/basic-usage/#operating-modes).
@@ -134,7 +134,7 @@ Poetry supports this application-oriented setup through [non-package mode](https
 | Add a dependency | `uv add httpx` | `poetry add httpx` |
 | Record resolved dependencies | `uv.lock` | `poetry.lock` |
 | Synchronize the environment | `uv sync` | `poetry sync` |
-| Run a script | `uv run python main.py` | `poetry run python main.py` |
+| Run a script | `uv run python3 main.py` | `poetry run python3 main.py` |
 | Build a distribution | `uv build` | `poetry build` |
 | Publish a distribution | `uv publish` | `poetry publish` |
 
