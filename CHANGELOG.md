@@ -2,6 +2,16 @@
 
 All notable changes to FridayHacks are documented in this file.
 
+## 1.2.4 - 2026-11-14
+
+### Changed
+- **Python command examples** - Updated the uv and Poetry comparison to invoke `python3` for scripts and pip, and documented the interpreter command convention.
+
+## 1.2.3 - 2026-11-14
+
+### Added
+- **Python workflow comparison** - Added "uv, Poetry, or pip and venv? Choosing a Python Workflow" with practical examples, dependency locking, current Poetry capabilities, and recommendations for new and existing projects.
+
 ## 1.2.2 - 2026-11-14
 
 ### Fixed
