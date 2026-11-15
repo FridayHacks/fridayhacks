@@ -84,6 +84,10 @@ FridayHacks is a technical playground for experimenting with technologies, docum
 - [ ] Optimize image loading (lazy loading, WebP)
 - [ ] Improve mobile experience
 
+## Published Developer Tool Guides
+
+- [uv, Poetry, or pip and venv? Choosing a Python Workflow](../_posts/2026-11-14-uv-poetry-pip-venv.md) - Dependency management examples and recommendations, with official documentation references.
+
 ## Content Ideas Backlog
 
 ### Quick Hacks (Weekend Projects)
